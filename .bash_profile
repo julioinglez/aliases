@@ -1,4 +1,3 @@
-
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -7,7 +6,11 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 #alias commands:
-alias aliases="cd ~/ && atom .bash_profile"
+alias reloadaliases="source ~/.bash_profile"
+alias linkaliases="ln -s ~/aliases/.bash_profile ~/.bash_profile"
+alias deletealiases="rm ~/.bash_profile"
+alias aliases="cd ~/aliases/ && atom .bash_profile"
+alias localaliases="cd ~/ && atom .bash_profile"
 
 #ember commands:
 alias lez="ember t"
