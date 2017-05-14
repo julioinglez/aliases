@@ -10,6 +10,7 @@ alias reloadaliases="source ~/.bash_profile"
 alias linkaliases="ln -s ~/aliases/.bash_profile ~/.bash_profile"
 alias deletealiases="rm ~/.bash_profile"
 alias aliases="cd ~/aliases/ && atom .bash_profile"
+alias cdaliases="cd ~/aliases"
 alias localaliases="cd ~/ && atom .bash_profile"
 
 #ember commands:
