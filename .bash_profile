@@ -23,6 +23,8 @@ alias fox="bundle exec rails s"
 alias quickfox="bundle exec foreman start -f Procfile.dev"
 alias console="bundle exec rails c"
 alias unicorns="bundle exec unicorn -c config/unicorn.dev.rb"
+alias linktahua="bundle config --local local.funding_system ~/workspace/tahua"
+alias linkfnf="bundle config --local local.formnflow ~/workspace/formnflow"
 
 #navigate between directories commands:
 alias julio="cd ~"
