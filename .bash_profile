@@ -14,7 +14,7 @@ alias cdaliases="cd ~/aliases"
 alias localaliases="cd ~/ && atom .bash_profile"
 
 #ember commands:
-alias foxy="ember server"
+alias foxy="ember server --live-reload-port 49153"
 alias emberfox="foreman start -f Procfile.dev"
 
 #bundle commands:
