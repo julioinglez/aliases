@@ -6,7 +6,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 #alias commands:
-alias reloadaliases="source ~/.bash_profile"
+alias reload="source ~/.bash_profile"
 alias linkaliases="ln -s ~/aliases/.bash_profile ~/.bash_profile"
 alias deletealiases="rm ~/.bash_profile"
 alias aliases="cd ~/aliases/ && atom .bash_profile"
@@ -21,12 +21,14 @@ alias emberfox="foreman start -f Procfile.dev"
 alias fox="bundle exec rails s"
 alias quickfox="bundle exec foreman start -f Procfile.dev"
 alias console="bundle exec rails c"
+alias sidekiq="bundle exec sidekiq"
 alias unicorns="bundle exec unicorn -c config/unicorn.dev.rb"
 alias linktahua="bundle config --local local.funding_system ~/workspace/tahua"
 alias linkfnf="bundle config --local local.formnflow ~/workspace/formnflow"
 
 #navigate between directories commands:
 alias julio="cd ~"
+alias portfolio="cd ~/workspace/portfolio"
 alias workspace="cd ~/workspace"
 alias colo="cd ~/workspace/colo"
 alias hashbang="cd ~/workspace/hashbang"
@@ -39,7 +41,7 @@ alias nimbl="cd ~/workspace/nimbl_cms"
 alias fnf="cd ~/workspace/formnflow"
 alias fs="cd ~/workspace/tahua"
 alias tahua="cd ~/workspace/tahua"
-alias mlc="cd ~/workspace/tahua-mlc"
+alias ttwh="cd ~/workspace/tahua-ttwh"
 alias tmp="cd ~/workspace/tahua-tmp"
 alias nzoa="cd ~/workspace/tahua-nzoa"
 alias nzfc="cd ~/workspace/tahua-nzfc"
@@ -48,6 +50,9 @@ alias ttc="cd ~/workspace/ttc_worldcup"
 alias nexus="cd ~/workspace/nexus-marketplace"
 alias nexusapi="cd ~/workspace/nexus-api"
 alias nexuspattern="cd ~/workspace/nexus-pattern-library"
+alias kb="cd ~/workspace/kiwibank-home-loans"
+alias nt="cd ~/workspace/nzoa_newtracks"
+alias mt="cd ~/workspace/nzoa_makingtracks"
 
 #git commands:
 alias develop="git checkout develop"
@@ -70,3 +75,12 @@ alias db:production="bundle exec cap production backups:import"
 
 #remote access
 alias remote:staging="bundle exec cap staging docker:bash"
+alias remote:staging:console="bundle exec cap staging console"
+alias remote:production="bundle exec cap production docker:bash"
+alias remote:production:console="bundle exec cap production console"
+
+# #java commands
+# export JENV_ROOT=/usr/local/opt/jenv
+# if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
