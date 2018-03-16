@@ -25,6 +25,8 @@ alias sidekiq="bundle exec sidekiq"
 alias unicorns="bundle exec unicorn -c config/unicorn.dev.rb"
 alias linktahua="bundle config --local local.funding_system ~/workspace/tahua"
 alias linkfnf="bundle config --local local.formnflow ~/workspace/formnflow"
+alias tahuaup="bundle update funding_system"
+alias fnfup="bundle update formnflow"
 
 #navigate between directories commands:
 alias julio="cd ~"
@@ -79,8 +81,6 @@ alias remote:staging:console="bundle exec cap staging console"
 alias remote:production="bundle exec cap production docker:bash"
 alias remote:production:console="bundle exec cap production console"
 
-# #java commands
-# export JENV_ROOT=/usr/local/opt/jenv
-# if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-# export PATH="$HOME/.jenv/bin:$PATH"
-# eval "$(jenv init -)"
+#general aliases
+alias fnf="formnflow"
+alias tahua="funding_system"
