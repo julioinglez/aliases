@@ -82,5 +82,4 @@ alias remote:production="bundle exec cap production docker:bash"
 alias remote:production:console="bundle exec cap production console"
 
 #general aliases
-alias fnf="formnflow"
 alias tahua="funding_system"
