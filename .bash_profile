@@ -80,6 +80,3 @@ alias remote:staging="bundle exec cap staging docker:bash"
 alias remote:staging:console="bundle exec cap staging console"
 alias remote:production="bundle exec cap production docker:bash"
 alias remote:production:console="bundle exec cap production console"
-
-#general aliases
-alias tahua="funding_system"
