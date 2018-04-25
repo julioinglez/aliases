@@ -16,6 +16,7 @@ alias localaliases="cd ~/ && atom .bash_profile"
 #ember commands:
 alias foxy="ember server --live-reload-port 49153"
 alias emberfox="foreman start -f Procfile.dev"
+alias whale="foreman start -f Procfile.dev -p 3000"
 
 #bundle commands:
 alias fox="bundle exec rails s"
@@ -55,6 +56,7 @@ alias nexuspattern="cd ~/workspace/nexus-pattern-library"
 alias kb="cd ~/workspace/kiwibank-home-loans"
 alias nt="cd ~/workspace/nzoa_newtracks"
 alias mt="cd ~/workspace/nzoa_makingtracks"
+alias ttc="cd ~/workspace/ttc"
 
 #git commands:
 alias develop="git checkout develop"
@@ -66,6 +68,7 @@ alias fetch="git fetch"
 alias pull="git pull"
 alias commit="git commit"
 alias push="git push"
+alias key="cat ~/.ssh/id_rsa.pub"
 
 #db commands
 alias db:create="bundle exec rake db:create"
