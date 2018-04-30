@@ -13,7 +13,7 @@ alias aliases="cd ~/aliases/ && atom .bash_profile"
 alias cdaliases="cd ~/aliases"
 alias localaliases="cd ~/ && atom .bash_profile"
 
-#ember commands:
+#server running commands:
 alias foxy="ember server --live-reload-port 49153"
 alias emberfox="foreman start -f Procfile.dev"
 alias whale="foreman start -f Procfile.dev -p 3000"
@@ -83,3 +83,6 @@ alias remote:staging="bundle exec cap staging docker:bash"
 alias remote:staging:console="bundle exec cap staging console"
 alias remote:production="bundle exec cap production docker:bash"
 alias remote:production:console="bundle exec cap production console"
+
+#other
+alias ping="ping www.google.com"
