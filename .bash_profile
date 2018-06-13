@@ -15,8 +15,7 @@ alias localaliases="cd ~/ && atom .bash_profile"
 
 #server running commands:
 alias foxy="ember server --live-reload-port 49153"
-alias emberfox="foreman start -f Procfile.dev"
-alias whale="foreman start -f Procfile.dev -p 3000"
+alias whale="foreman start -f Procfile.dev"
 
 #bundle commands:
 alias fox="bundle exec rails s"
@@ -32,6 +31,7 @@ alias fnfup="bundle update formnflow"
 #navigate between directories commands:
 alias julio="cd ~"
 alias portfolio="cd ~/workspace/portfolio"
+alias portfolio-react="cd ~/workspace/portfolio-react"
 alias workspace="cd ~/workspace"
 alias colo="cd ~/workspace/colo"
 alias hashbang="cd ~/workspace/hashbang"
@@ -39,7 +39,7 @@ alias monty="cd ~/workspace/solserv"
 alias audioculture="cd ~/workspace/audioculture"
 alias makingtracks="cd ~/workspace/nzoa_makingtracks"
 alias nzos="cd ~/workspace/nzonscreen"
-alias nzdata="cd ~/workspace/nzdata_qmplus"
+alias sniper="cd ~/workspace/nzdata_qmplus"
 alias tmpw="cd ~/workspace/tmp_website"
 alias nimbl="cd ~/workspace/nimbl_cms"
 alias fnf="cd ~/workspace/formnflow"
