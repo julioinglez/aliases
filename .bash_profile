@@ -16,17 +16,18 @@ alias localaliases="cd ~/ && atom .bash_profile"
 #server running commands:
 alias foxy="ember server --live-reload-port 49153"
 alias whale="foreman start -f Procfile.dev"
+alias tiger="npm start"
+alias unicorns="bundle exec unicorn -c config/unicorn.dev.rb"
 
 #bundle commands:
 alias fox="bundle exec rails s"
-alias quickfox="bundle exec foreman start -f Procfile.dev"
 alias console="bundle exec rails c"
 alias sidekiq="bundle exec sidekiq"
-alias unicorns="bundle exec unicorn -c config/unicorn.dev.rb"
 alias linktahua="bundle config --local local.funding_system ~/workspace/tahua"
 alias linkfnf="bundle config --local local.formnflow ~/workspace/formnflow"
 alias tahuaup="bundle update funding_system"
 alias fnfup="bundle update formnflow"
+alias file="bundle exec thor presass:expand_scss app/runtime_sass/funding_system/runtime.pre"
 
 #navigate between directories commands:
 alias julio="cd ~"
@@ -80,6 +81,9 @@ alias db:seed="bundle exec rake db:seed"
 alias db:drop="bundle exec rake db:drop"
 alias db:staging="bundle exec cap staging backups:import"
 alias db:production="bundle exec cap production backups:import"
+
+# data commands
+alias data:migrate="bundle exec rake data:migrate"
 
 #remote access
 alias remote:staging="bundle exec cap staging docker:bash"
