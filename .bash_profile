@@ -28,6 +28,10 @@ alias linkfnf="bundle config --local local.formnflow ~/workspace/formnflow"
 alias tahuaup="bundle update funding_system"
 alias fnfup="bundle update formnflow"
 alias file="bundle exec thor presass:expand_scss app/runtime_sass/funding_system/runtime.pre"
+alias routes="bundle exec rake routes"
+
+#postgres commands:
+alias resetpg="rm /usr/local/var/postgres/postmaster.pid"
 
 #navigate between directories commands:
 alias julio="cd ~"
