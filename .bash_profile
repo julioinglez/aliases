@@ -1,11 +1,8 @@
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
 export UNBLOCK_ALL_EMAILS=1
+export WILDCARD_DOMAIN='lvh.me'
 
 #alias commands:
 alias reload="source ~/.bash_profile"
@@ -35,8 +32,8 @@ alias tmp:clear="bundle exec rake tmp:cache:clear"
 alias bun2="gem uninstall bundler -v 2.0.2"
 
 #postgres commands:
-alias pgreset="rm /usr/local/var/postgres/postmaster.pid"
-alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg_reset="rm /usr/local/var/postgres/postmaster.pid"
+alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 
 #navigate between directories commands:
 alias julio="cd ~"
@@ -101,7 +98,7 @@ alias db:prod="bundle exec cap production backups:import"
 alias db:prod:daily="bundle exec cap production backups:import_daily"
 alias db:prod:monthly="bundle exec cap production backups:import_monthly"
 
-# data commands
+#data commands
 alias data:migrate="bundle exec rake data:migrate"
 
 #remote access
@@ -109,4 +106,15 @@ alias remote:staging="bundle exec cap staging docker:bash"
 alias remote:staging:console="bundle exec cap staging console"
 alias remote:production="bundle exec cap production docker:bash"
 alias remote:production:console="bundle exec cap production console"
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+
+#M1 Chip specific commands
+alias rosetta="arch -x86_64"
+
+#library scripts
+eval "$(rbenv init -)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH=/usr/local/Cellar/mysql/8.0.26/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+export NODE_OPTIONS=--openssl-legacy-provider
