@@ -8,9 +8,9 @@ export WILDCARD_DOMAIN='lvh.me'
 alias reload="source ~/.bash_profile"
 alias linkaliases="ln -s ~/aliases/.bash_profile ~/.bash_profile"
 alias deletealiases="rm ~/.bash_profile"
-alias aliases="cd ~/aliases/ && atom .bash_profile"
+alias aliases="cd ~/aliases/ && mine .bash_profile"
 alias cdaliases="cd ~/aliases"
-alias localaliases="cd ~/ && atom .bash_profile"
+alias localaliases="cd ~/ && mine .bash_profile"
 
 #server running commands:
 alias foxy="ember server --live-reload-port 49153"
@@ -72,6 +72,7 @@ alias nt="cd ~/workspace/nzoa_newtracks"
 alias nmt="cd ~/workspace/nzoa_makingtracks"
 alias nms="cd ~/workspace/nzoa_newmusicsingles"
 alias ttc="cd ~/workspace/ttc"
+alias overseer="cd ~/workspace/overseer"
 
 #git commands:
 alias develop="git checkout develop"
