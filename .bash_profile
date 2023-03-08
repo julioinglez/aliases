@@ -72,7 +72,7 @@ alias nt="cd ~/workspace/nzoa_newtracks"
 alias nmt="cd ~/workspace/nzoa_makingtracks"
 alias nms="cd ~/workspace/nzoa_newmusicsingles"
 alias ttc="cd ~/workspace/ttc"
-alias overseer="cd ~/workspace/overseer"
+alias kernel="cd ~/workspace/kernel"
 
 #git commands:
 alias develop="git checkout develop"
