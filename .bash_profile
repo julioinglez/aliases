@@ -8,7 +8,7 @@ export WILDCARD_DOMAIN='lvh.me'
 alias reload="source ~/.bash_profile"
 alias linkaliases="ln -s ~/aliases/.bash_profile ~/.bash_profile"
 alias deletealiases="rm ~/.bash_profile"
-alias aliases="cd ~/aliases/ && mine .bash_profile"
+alias aliases="cd ~/aliases/ && vscode .bash_profile"
 alias cdaliases="cd ~/aliases"
 alias localaliases="cd ~/ && mine .bash_profile"
 
@@ -40,7 +40,7 @@ alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/ser
 
 #navigate between directories commands:
 alias julio="cd ~"
-alias portfolio="cd ~/workspace/portfolio"
+alias portfolio="cd ~/workspace/julioinglez"
 alias portfolio-react="cd ~/workspace/portfolio-react"
 alias luca="cd ~/workspace/luca-portfolio"
 alias workspace="cd ~/workspace"
@@ -76,6 +76,10 @@ alias nmt="cd ~/workspace/nzoa_makingtracks"
 alias nms="cd ~/workspace/nzoa_newmusicsingles"
 alias ttc="cd ~/workspace/ttc"
 alias kernel="cd ~/workspace/kernel"
+alias cris="cd ~/workspace/cristina-neves"
+alias roda="cd ~/workspace/roda-experience"
+alias rodatmp="cd ~/workspace/roda-experience-placeholder"
+alias template="cd ~/workspace/project-template"
 
 #git commands:
 alias develop="git checkout develop"
@@ -116,7 +120,7 @@ alias rosetta="arch -x86_64"
 
 #library scripts
 eval "$(rbenv init -)"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/usr/local/bin/brew shellenv)"
 export PATH=/usr/local/Cellar/mysql/8.0.26/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
