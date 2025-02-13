@@ -12,9 +12,6 @@ alias aliases="cd ~/aliases/ && vscode .bash_profile"
 alias cdaliases="cd ~/aliases"
 alias localaliases="cd ~/ && mine .bash_profile"
 
-#open IDEs:
-alias vscode="open -a 'Visual Studio Code'"
-
 #server running commands:
 alias foxy="ember server --live-reload-port 49153"
 alias whale="foreman start -f Procfile.dev"
