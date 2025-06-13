@@ -18,6 +18,9 @@ alias whale="foreman start -f Procfile.dev"
 alias tiger="npm start"
 alias unicorns="bundle exec unicorn -c config/unicorn.dev.rb"
 
+#npm commands:
+alias plaiceholders="npm run generate:plaiceholders"
+
 #bundle commands:
 alias fox="bundle exec rails s"
 alias console="bundle exec rails c"
@@ -26,9 +29,9 @@ alias linktahua="bundle config --local local.funding_system ~/workspace/tahua"
 alias linkfnf="bundle config --local local.formnflow ~/workspace/formnflow"
 alias tahuaup="bundle update funding_system"
 alias fnfup="bundle update formnflow"
-alias file="bundle exec thor presass:expand_scss app/runtime_sass/funding_system/runtime.pre"
+alias css="bundle exec thor presass:expand_scss app/runtime_sass/funding_system/runtime.pre"
 alias routes="bundle exec rake routes"
-alias tmp:clear="bundle exec rake tmp:cache:clear"
+alias tmpclear="bundle exec rake tmp:cache:clear"
 alias bun2="gem uninstall bundler -v 2.0.2"
 
 #postgres commands:
